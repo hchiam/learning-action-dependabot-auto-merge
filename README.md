@@ -34,4 +34,4 @@ jobs:
           github-token: ${{ secrets.mytoken }}
 ```
 
-Then go to: Settings > Security > Secrets and variables > Dependabot > New repository secret > Name: mytoken, Secret: (paste PAT) > Add secret
+Then go to: **Settings** > **Security** > **Secrets and variables** > **Dependabot** > **New repository secret** > **Name:** mytoken, **Secret:** (paste PAT) > **Add secret**
