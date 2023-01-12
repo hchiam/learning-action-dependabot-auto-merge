@@ -1,8 +1,15 @@
-# Learning action-dependabot-auto-merge
+# Learning [action-dependabot-auto-merge](https://github.com/ahmadnassri/action-dependabot-auto-merge)
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-https://github.com/ahmadnassri/action-dependabot-auto-merge
+## At least once
+
+Set up a [PAT (Personal Access Token)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) named `mytoken` with these scopes:
+
+- `repo` for private repositories
+- `public_repo` for public repositories
+
+## Per repo
 
 Create this file: `.github/workflows/dependabot_auto_merge.yml`
 
@@ -23,7 +30,4 @@ jobs:
           github-token: ${{ secrets.mytoken }}
 ```
 
-Set up a [PAT (Personal Access Token)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) named `mytoken` with these scopes:
-
-- `repo` for private repositories
-- `public_repo` for public repositories
+Then go to: Settings > Security > Secrets and variables > Dependabot > New repository secret > Name: mytoken, Secret: (paste PAT) > Add secret
