@@ -11,7 +11,11 @@ Set up a [PAT (Personal Access Token)](https://docs.github.com/en/authentication
 
 ## Per repo
 
-Create this file: `.github/workflows/dependabot_auto_merge.yml`
+Create this file:
+
+```txt
+.github/workflows/dependabot_auto_merge.yml
+```
 
 Literally post this into that file: (yes, literally `${{ secrets.mytoken }}`)
 
