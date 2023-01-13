@@ -11,6 +11,8 @@ Set up a [PAT (Personal Access Token)](https://docs.github.com/en/authentication
 
 ## Per repo
 
+Go to: **Settings** > **Security** > **Secrets and variables** > **Dependabot** > **New repository secret** > **Name:** mytoken, **Secret:** (paste PAT) > **Add secret**
+
 Create this file:
 
 ```txt
@@ -33,5 +35,3 @@ jobs:
         with:
           github-token: ${{ secrets.mytoken }}
 ```
-
-Then go to: **Settings** > **Security** > **Secrets and variables** > **Dependabot** > **New repository secret** > **Name:** mytoken, **Secret:** (paste PAT) > **Add secret**
